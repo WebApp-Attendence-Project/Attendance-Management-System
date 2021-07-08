@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+  <meta charset="utf-8">
+  <title>Create New Password</title>
+  <link rel="stylesheet" href="newpass.css" type="text/css">
+
+    </head>
+    <body>
+      <div class="heading">Create New Password !</div>
+      <section class="overlay">
+        <form action="submission" method="GET">
+          <div class="imgcontainer">
+            <img src="user.png" alt="user" class="user">
+          </div>
+          <label for="old password">Enter Old Password</label>
+          <br>
+          <input id="old password" name="old password" type="password" required minlength="3" maxlength="15">
+          <br>
+          <label for="new password">Enter New Password</label>
+          <br>
+          <input id="new password" name="new password" type="password" required minlength="3" maxlength="15">
+          <br>
+          <label for="confirm password">Enter Confirm Password</label>
+          <br>
+          <input id="confirm password" name="confirm password" type="password" required minlength="3" 
+          maxlength="15">
+          <button type="submit">SUBMIT</button>
+
+          
+        </form>
+
+      </section>
+    </body>
+</html>
