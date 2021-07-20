@@ -1,0 +1,114 @@
+.a{color: #E7484F}
+.b{color: #F68B1D}
+.c{color: #FCED00}
+.d{color: #009E4F}
+.e{color: #00AAC3}
+.f{color:  #732982}
+.container{
+  margin-top: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+.rainbow{
+  background-color: #343A40;
+  border-radius: 4px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  
+}
+.registerbtn:hover{
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+body {
+  background: #111;
+  font-family: "Open Sans",  Impact;
+ }
+ 
+ .heading {
+   text-align: center;
+   font-size: 6.5em;
+   color: #fff;
+   letter-spacing: -7px;
+   font-weight: 700;
+   text-transform: uppercase;
+   animation: blur .75s ease-out infinite;
+   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+ }
+ 
+ @keyframes blur {
+   from {
+     text-shadow:0px 0px 10px #fff,
+       0px 0px 10px #fff, 
+       0px 0px 25px #fff,
+       0px 0px 25px #fff,
+       0px 0px 25px #fff,
+       0px 0px 25px #fff,
+       0px 0px 25px #fff,
+       0px 0px 25px #fff,
+       0px 0px 50px #fff,
+       0px 0px 50px #fff,
+       0px 0px 50px #7B96B8,
+       0px 0px 150px #7B96B8,
+       0px 10px 100px #7B96B8,
+       0px 10px 100px #7B96B8,
+       0px 10px 100px #7B96B8,
+       0px 10px 100px #7B96B8,
+       0px -10px 100px #7B96B8,
+       0px -10px 100px #7B96B8;
+   }
+ }
+ 
+ 
+ 
+
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #F9C226;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #008c9e;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
