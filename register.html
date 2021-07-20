@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+ <html>  
+  <head>  
+    <meta charset="utf-8"> 
+  <title>  
+  Registration Page  
+  </title>  
+  <link rel="stylesheet" href="register.css" type="text/css">
+
+  </head>  
+  <body>  
+  <form> 
+    <div class="container"> 
+      <div class="heading">Register Here !</div>  
+      <hr>  
+      <label> First Name </label>   
+    <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+    <label> Middle Name: </label>   
+    <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+    <label> Last Name: </label>    
+    <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+    <div>  
+      <label>   
+      Gender :  
+      </label><br>  
+      <input type="radio" value="Male" name="gender" checked > Male   
+      <input type="radio" value="Female" name="gender"> Female   
+      <input type="radio" value="Other" name="gender"> Other  
+        
+      </div>  
+      <br>
+      <br>
+
+      <label>   
+      Staff: 
+      </label>  
+    <input type="radio" value="Loading/Unloading" name="staff" checked>Loading/Unloading
+      <input type="radio" value="House Keeping" name="staff">House Keeping 
+       <input type="radio" value="Other Services" name="staff">Other Services 
+       <br>
+       <br>
+       <br>
+       <div>
+         <label>
+          Blood Group: 
+         </label>
+         <input type="radio" value="O+ve" name="blood group">O+ve
+         <input type="radio" value="A+ve" name="blood group">A+ve
+         <input type="radio" value="A-ve" name="blood group">A-ve
+         <input type="radio" value="B+ve" name="blood group">B+ve
+         <input type="radio" value="B-ve" name="blood group">B-ve
+         <input type="radio" value="AB+ve"name="blood group">AB+ve
+         <input type="radio" value="AB-ve"name="blood group">AB-ve
+         <br>
+         <br>
+
+ 
+       <label for="email"><b>Email</b></label>  
+       <input type="text" placeholder="Enter Email" name="email" required>  
+       <br>
+        
+          <label for="psw"><b>Password</b></label>  
+          <input type="password" placeholder="Enter Password" name="psw" required>  
+          <br>
+        
+          <label for="psw-repeat"><b>Re-type Password</b></label>  
+          <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+          <label for="phn"><b>Phone-number:</b></label>
+          <input type="number" placeholder="Enter Phone-number" name="phn" required>
+          <br>
+          <div class="container text-center">
+          <button type="submit" class=" rainbow registerbtn">Register</button>   
+          </div> 
+      </form>  
+      </body>  
+      </html>  
