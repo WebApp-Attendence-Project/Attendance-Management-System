@@ -1,0 +1,64 @@
+{% extends 'info/basic.html' %}
+{% load static %}
+
+{% block title%} Add Staff{% endblock %}
+
+{% block css %}
+.radio-inline{
+  padding-left:10px;
+}
+{% endblock css %}
+
+{% block body %}
+<div class="container my-3">
+  <h3>Add Staff</h3>
+  <form id="myfrm" action="/info/add_staff/"  method="post" >
+  {% csrf_token %}
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name">
+    </div>
+    <div class="form-group">
+      <label for="name">Email</label>
+      <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email">
+    </div>
+
+<div class="form-group">
+    <span> Gender</span>
+    <select id="gender" name='gender' >
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+   
+    </select>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone</label>
+      <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number">
+    </div>
+    <div class="form-group">
+      <label for="name">Blood Group</label>
+      <input type="text" class="form-control" id="bloodgroup" name='bloodgroup' placeholder="Enter Your Blood Group">
+    </div>
+
+    <hr>
+    <div class="form-group">
+    <span> Position</span>
+    <select id="position" name='position' >
+    <option value="Loading">Loading</option>
+    <option value="Unloading">Unloading</option>
+    <option value="House Keeping">House Keeping</option>
+    <option value="Other Services">Other Services</option>
+    </select>
+    </div>
+    <hr>
+    <button type="submit" id="btnn" class="btn btn-success">Submit</button>
+  </form>
+
+
+
+</div>
+{% endblock %}
+{% block js %}
+{% endblock %}

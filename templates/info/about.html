@@ -1,0 +1,57 @@
+{% extends 'info/basic.html' %}
+{% load static %}
+{% block css %}
+.about{
+  background:rgb(0, 0, 26);
+}
+.container{
+  color:white;
+}
+img{
+  height:500px;
+}
+
+
+{% endblock css %}
+
+{% block body %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{%static 'img/img1.png'%}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{%static 'img/img2.png'%}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{%static 'img/img3.png'%}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="about">
+<div class="container">
+<h1><i>ONGC</i></h1>
+<p><i>Oil and Natural Gas Corporation (ONGC) is an Indian government-owned crude oil and natural gas corporation. Its registered office is in New Delhi. It is under the ownership of Ministry of Petroleum and Natural Gas, Government of India. It is the largest oil and gas exploration and production company in the country, and produces around 70% of India's crude oil (equivalent to around 57% of the country's total demand) and around 84% of its natural gas.[5] In November 2010, the Government of India conferred the Maharatna status to ONGC.[6]
+
+In a survey by Government of India for fiscal year 2019–20, it was ranked as the largest profit making PSU in India.[7] It is ranked 7th among the Top 250 Global Energy Companies by Platts.[8]
+
+ONGC was founded on 14 August 1956 by Government of India. It is involved in exploring for and exploiting hydrocarbons in 26 sedimentary basins of India, and owns and operates over 11,000 kilometers of pipelines in the country. Its international subsidiary ONGC Videsh currently has projects in 17 countries. ONGC has discovered 7 out of the 8 producing Indian Basins, adding over 7.15 billion tonnes of In-place Oil & Gas volume of hydrocarbons in Indian basins. Against a global decline of production from matured fields, ONGC has maintained production from its brownfields like Mumbai High, with the help of aggressive investments in various IOR (Improved Oil Recovery) and EOR (Enhanced Oil Recovery) schemes. ONGC has many matured fields with a current recovery factor of 25–33%.[5] Its Reserve Replacement Ratio for between 2005 and 2013, has been more than one.[5] During FY 2012–13, ONGC had to share the highest ever under-recovery of INR 89765.78 billion (an increase of INR 17889.89 million over the previous financial year) towards the under-recoveries of Oil Marketing Companies (IOC, BPCL and HPCL).[5] On 1 November 2017, the Union Cabinet approved ONGC for acquiring majority 51.11% stake in HPCL (Hindustan Petroleum Corporation Limited). On Jan 30th 2018, Oil & Natural Gas Corporation acquired the entire 51.11% stake of Hindustan Petroleum Corporation</i></p>
+</div>
+</div>
+{% endblock  %}
+{% block js %}
+<script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
